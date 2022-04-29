@@ -115,14 +115,14 @@ NvmeRequest 的协作图:</div>
 <area shape="rect" href="structNvmeLBAF.html" title=" " alt="" coords="1109,7,1203,33"/>
 <area shape="rect" href="structNvmeCQueue.html" title=" " alt="" coords="1637,804,1749,831"/>
 <area shape="rect" href="structrte__ring.html" title=" " alt="" coords="877,433,949,460"/>
-<area shape="rect" href="structssd.html" title=" " alt="" coords="1134,300,1178,327"/>
+<area shape="rect" href="structssd.html" title="模拟一个ssd" alt="" coords="1134,300,1178,327"/>
 <area shape="rect" href="structrte__ring__headtail.html" title=" " alt="" coords="563,433,695,460"/>
 <area shape="rect" href="structOcCtrlParams.html" title=" " alt="" coords="1101,548,1211,575"/>
 <area shape="rect" href="structNvmeBar.html" title=" " alt="" coords="1115,599,1197,625"/>
 <area shape="rect" href="structNvmeFeatureVal.html" title=" " alt="" coords="1091,649,1221,676"/>
 <area shape="rect" href="structNvmeZone.html" title=" " alt="" coords="1109,700,1203,727"/>
 <area shape="rect" href="structNvmeZoneDescr.html" title=" " alt="" coords="848,700,979,727"/>
-<area shape="rect" href="structFemuExtCtrlOps.html" title=" " alt="" coords="1093,751,1219,777"/>
+<area shape="rect" href="structFemuExtCtrlOps.html" title="扩展操作接口，具体实现在各模式ssd中" alt="" coords="1093,751,1219,777"/>
 <area shape="rect" href="structOc12Ctrl.html" title=" " alt="" coords="1117,801,1195,828"/>
 <area shape="rect" href="structOc12IdCtrl.html" title=" " alt="" coords="868,801,959,828"/>
 <area shape="rect" href="structOc12IdGroup.html" title=" " alt="" coords="575,776,682,803"/>
@@ -131,7 +131,7 @@ NvmeRequest 的协作图:</div>
 <area shape="rect" href="structOc12AddrF.html" title=" " alt="" coords="867,751,960,777"/>
 <area shape="rect" href="structNvmeParams.html" title=" " alt="" coords="1101,852,1211,879"/>
 <area shape="rect" href="structOc20Params.html" title=" " alt="" coords="862,903,965,929"/>
-<area shape="rect" href="structSsdDramBackend.html" title=" " alt="" coords="1088,903,1224,929"/>
+<area shape="rect" href="structSsdDramBackend.html" title="DRAM backend SSD address space" alt="" coords="1088,903,1224,929"/>
 <area shape="rect" href="structNvmeIdNsZoned.html" title=" " alt="" coords="1091,953,1221,980"/>
 <area shape="rect" href="structNvmeLBAFE.html" title=" " alt="" coords="862,953,965,980"/>
 <area shape="rect" href="structNvmeErrorLog.html" title=" " alt="" coords="1099,57,1213,84"/>
@@ -139,7 +139,7 @@ NvmeRequest 的协作图:</div>
 <area shape="rect" href="structline__mgmt.html" title="记录各种line的列表和数量" alt="" coords="867,209,959,236"/>
 <area shape="rect" href="structssdparams.html" title="ssd参数" alt="" coords="867,159,960,185"/>
 <area shape="rect" href="structwrite__pointer.html" title="wp: record next write addr" alt="" coords="859,260,967,287"/>
-<area shape="rect" href="structline.html" title=" " alt="" coords="605,223,652,249"/>
+<area shape="rect" href="structline.html" title="line" alt="" coords="605,223,652,249"/>
 <area shape="rect" href="structppa.html" title="describe a physical page addr" alt="" coords="890,311,937,337"/>
 <area shape="rect" href="structssd__channel.html" title="通道" alt="" coords="862,361,965,388"/>
 <area shape="rect" href="structnand__lun.html" title="晶圆" alt="" coords="588,361,669,388"/>
@@ -173,10 +173,13 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a6c614d6e18850245fb2b05f087c4cc71"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmeRequest.html#a6c614d6e18850245fb2b05f087c4cc71">status</a></td></tr>
 <tr class="separator:a6c614d6e18850245fb2b05f087c4cc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35d73ae4b2cd7c17e55d20320ac2b1ea"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmeRequest.html#a35d73ae4b2cd7c17e55d20320ac2b1ea">slba</a></td></tr>
+<tr class="memdesc:a35d73ae4b2cd7c17e55d20320ac2b1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始lba  <a href="structNvmeRequest.html#a35d73ae4b2cd7c17e55d20320ac2b1ea">更多...</a><br /></td></tr>
 <tr class="separator:a35d73ae4b2cd7c17e55d20320ac2b1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f04006cddb851afcc919412c6e90b60"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmeRequest.html#a6f04006cddb851afcc919412c6e90b60">is_write</a></td></tr>
+<tr class="memdesc:a6f04006cddb851afcc919412c6e90b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否为写操作  <a href="structNvmeRequest.html#a6f04006cddb851afcc919412c6e90b60">更多...</a><br /></td></tr>
 <tr class="separator:a6f04006cddb851afcc919412c6e90b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9efcb9c4901c697b16f583893abef3a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmeRequest.html#ab9efcb9c4901c697b16f583893abef3a">nlb</a></td></tr>
+<tr class="memdesc:ab9efcb9c4901c697b16f583893abef3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">逻辑块个数  <a href="structNvmeRequest.html#ab9efcb9c4901c697b16f583893abef3a">更多...</a><br /></td></tr>
 <tr class="separator:ab9efcb9c4901c697b16f583893abef3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e3673459e0f79622136bc58edb4e986"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmeRequest.html#a7e3673459e0f79622136bc58edb4e986">ctrl</a></td></tr>
 <tr class="separator:a7e3673459e0f79622136bc58edb4e986"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,16 +200,20 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a4469b2b304ba50b7674a4cf4e0ce4a4f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmeRequest.html#a4469b2b304ba50b7674a4cf4e0ce4a4f">cmd_opcode</a></td></tr>
 <tr class="separator:a4469b2b304ba50b7674a4cf4e0ce4a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a678064f3bc45fbeb366ea44aea7273b2"><td class="memItemLeft" align="right" valign="top">QEMUSGList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmeRequest.html#a678064f3bc45fbeb366ea44aea7273b2">qsg</a></td></tr>
+<tr class="memdesc:a678064f3bc45fbeb366ea44aea7273b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">dma用  <a href="structNvmeRequest.html#a678064f3bc45fbeb366ea44aea7273b2">更多...</a><br /></td></tr>
 <tr class="separator:a678064f3bc45fbeb366ea44aea7273b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22a0c24be595ec2abed21073be01efd9"><td class="memItemLeft" align="right" valign="top">QEMUIOVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmeRequest.html#a22a0c24be595ec2abed21073be01efd9">iov</a></td></tr>
 <tr class="separator:a22a0c24be595ec2abed21073be01efd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad267c178ee13ebb285604043925b5e78"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmeRequest.html#ad267c178ee13ebb285604043925b5e78">stime</a></td></tr>
+<tr class="memdesc:ad267c178ee13ebb285604043925b5e78"><td class="mdescLeft">&#160;</td><td class="mdescRight">io开始时间  <a href="structNvmeRequest.html#ad267c178ee13ebb285604043925b5e78">更多...</a><br /></td></tr>
 <tr class="separator:ad267c178ee13ebb285604043925b5e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b78c8ff9c9bf2a1012976ac9764d5bc"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmeRequest.html#a5b78c8ff9c9bf2a1012976ac9764d5bc">reqlat</a></td></tr>
+<tr class="memdesc:a5b78c8ff9c9bf2a1012976ac9764d5bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">io延迟  <a href="structNvmeRequest.html#a5b78c8ff9c9bf2a1012976ac9764d5bc">更多...</a><br /></td></tr>
 <tr class="separator:a5b78c8ff9c9bf2a1012976ac9764d5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19e34a9bc208850c2d75a42ba3bdd329"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmeRequest.html#a19e34a9bc208850c2d75a42ba3bdd329">gcrt</a></td></tr>
 <tr class="separator:a19e34a9bc208850c2d75a42ba3bdd329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a135bf3cba23f12bad28c20805a8f5d93"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmeRequest.html#a135bf3cba23f12bad28c20805a8f5d93">expire_time</a></td></tr>
+<tr class="memdesc:a135bf3cba23f12bad28c20805a8f5d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">io应该结束的时间  <a href="structNvmeRequest.html#a135bf3cba23f12bad28c20805a8f5d93">更多...</a><br /></td></tr>
 <tr class="separator:a135bf3cba23f12bad28c20805a8f5d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a670d3cdf0f9de16feb156e8630e00f81"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmeRequest.html#a670d3cdf0f9de16feb156e8630e00f81">predef</a></td></tr>
 <tr class="separator:a670d3cdf0f9de16feb156e8630e00f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,6 +324,8 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>io应该结束的时间 </p>
+
 </div>
 </div>
 <a id="a19e34a9bc208850c2d75a42ba3bdd329"></a>
@@ -358,6 +367,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>是否为写操作 </p>
 
 </div>
 </div>
@@ -414,6 +425,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>逻辑块个数 </p>
 
 </div>
 </div>
@@ -513,6 +526,8 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>dma用 </p>
+
 </div>
 </div>
 <a id="a5b78c8ff9c9bf2a1012976ac9764d5bc"></a>
@@ -527,6 +542,8 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>io延迟 </p>
+
 </div>
 </div>
 <a id="a35d73ae4b2cd7c17e55d20320ac2b1ea"></a>
@@ -540,6 +557,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>开始lba </p>
 
 </div>
 </div>
@@ -582,6 +601,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>io开始时间 </p>
 
 </div>
 </div>

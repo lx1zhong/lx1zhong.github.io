@@ -135,7 +135,7 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" title=" " alt="" coords="803,80,933,107"/>
 <area shape="rect" title=" " alt="" coords="957,80,1053,107"/>
 <area shape="rect" title=" " alt="" coords="1078,80,1197,107"/>
-<area shape="rect" href="dram_8h.html" title="dram后端相关定义" alt="" coords="1221,80,1347,107"/>
+<area shape="rect" href="dram_8h.html" title="DRAM后端相关声明" alt="" coords="1221,80,1347,107"/>
 <area shape="rect" href="rte__ring_8h.html" title=" " alt="" coords="1372,80,1479,107"/>
 <area shape="rect" href="pqueue_8h.html" title="Priority Queue function declarations" alt="" coords="1503,80,1609,107"/>
 <area shape="rect" href="nand_8h.html" title=" " alt="" coords="1633,80,1735,107"/>
@@ -155,7 +155,7 @@ nvme.h 的引用(Include)关系图:</div>
 <div class="center"><img src="nvme_8h__dep__incl.png" border="0" usemap="#femu_2nvme_8hdep" alt=""/></div>
 <map name="femu_2nvme_8hdep" id="femu_2nvme_8hdep">
 <area shape="rect" title="nvme相关数据声明" alt="" coords="941,5,1051,32"/>
-<area shape="rect" href="dram_8c.html" title="dram后端操作" alt="" coords="5,80,168,107"/>
+<area shape="rect" href="dram_8c.html" title="dram后端操作函数定义" alt="" coords="5,80,168,107"/>
 <area shape="rect" href="bb_8c.html" title="bb &lt;==&gt; BlackBox" alt="" coords="141,155,270,181"/>
 <area shape="rect" href="ftl_8h.html" title="ftl相关数据声明" alt="" coords="243,80,370,107"/>
 <area shape="rect" href="dma_8c.html" title=" " alt="" coords="394,80,494,107"/>
@@ -248,6 +248,7 @@ nvme.h 的引用(Include)关系图:</div>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOcCtrlParams.html">OcCtrlParams</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFemuExtCtrlOps.html">FemuExtCtrlOps</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">扩展操作接口，具体实现在各模式ssd中  <a href="structFemuExtCtrlOps.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFemuCtrl.html">FemuCtrl</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">femu相关控制参数和数据成员  <a href="structFemuCtrl.html#details">更多...</a><br /></td></tr>
@@ -565,6 +566,7 @@ nvme.h 的引用(Include)关系图:</div>
 <tr class="memitem:a6b9bce8b6580025a710247a30f0dfbce"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structOcCtrlParams.html">OcCtrlParams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6b9bce8b6580025a710247a30f0dfbce">OcCtrlParams</a></td></tr>
 <tr class="separator:a6b9bce8b6580025a710247a30f0dfbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d9fde4912328e2ecf4f80e41e1da013"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFemuExtCtrlOps.html">FemuExtCtrlOps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5d9fde4912328e2ecf4f80e41e1da013">FemuExtCtrlOps</a></td></tr>
+<tr class="memdesc:a5d9fde4912328e2ecf4f80e41e1da013"><td class="mdescLeft">&#160;</td><td class="mdescRight">扩展操作接口，具体实现在各模式ssd中  <a href="nvme_8h.html#a5d9fde4912328e2ecf4f80e41e1da013">更多...</a><br /></td></tr>
 <tr class="separator:a5d9fde4912328e2ecf4f80e41e1da013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a244bfc22a89680cfb2924aa52c61f942"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFemuCtrl.html">FemuCtrl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a244bfc22a89680cfb2924aa52c61f942">FemuCtrl</a></td></tr>
 <tr class="memdesc:a244bfc22a89680cfb2924aa52c61f942"><td class="mdescLeft">&#160;</td><td class="mdescRight">femu相关控制参数和数据成员  <a href="nvme_8h.html#a244bfc22a89680cfb2924aa52c61f942">更多...</a><br /></td></tr>
@@ -1079,6 +1081,7 @@ nvme.h 的引用(Include)关系图:</div>
 <tr class="memitem:a21b2434a9d5f978d0b4cf9661820ca63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a21b2434a9d5f978d0b4cf9661820ca63">nvme_update_sq_tail</a> (<a class="el" href="structNvmeSQueue.html">NvmeSQueue</a> *sq)</td></tr>
 <tr class="separator:a21b2434a9d5f978d0b4cf9661820ca63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3b74834e78afe9ce3db5074e8398a0f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac3b74834e78afe9ce3db5074e8398a0f">nvme_init_sq</a> (<a class="el" href="structNvmeSQueue.html">NvmeSQueue</a> *sq, <a class="el" href="structFemuCtrl.html">FemuCtrl</a> *n, uint64_t dma_addr, uint16_t sqid, uint16_t cqid, uint16_t size, enum <a class="el" href="nvme_8h.html#a01fa2fcaaecb728f8cc9eabc2e0fc971">NvmeQueueFlags</a> prio, int contig)</td></tr>
+<tr class="memdesc:ac3b74834e78afe9ce3db5074e8398a0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化sq队列，预分配空间  <a href="nvme_8h.html#ac3b74834e78afe9ce3db5074e8398a0f">更多...</a><br /></td></tr>
 <tr class="separator:ac3b74834e78afe9ce3db5074e8398a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae00a56019ece0039e9a209dfa7bc398e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae00a56019ece0039e9a209dfa7bc398e">nvme_free_sq</a> (<a class="el" href="structNvmeSQueue.html">NvmeSQueue</a> *sq, <a class="el" href="structFemuCtrl.html">FemuCtrl</a> *n)</td></tr>
 <tr class="separator:ae00a56019ece0039e9a209dfa7bc398e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1133,12 +1136,14 @@ nvme.h 的引用(Include)关系图:</div>
 <tr class="memitem:ad4130ad93f90bb1d6ba3bfd595214751"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad4130ad93f90bb1d6ba3bfd595214751">nvme_register_nossd</a> (<a class="el" href="structFemuCtrl.html">FemuCtrl</a> *n)</td></tr>
 <tr class="separator:ad4130ad93f90bb1d6ba3bfd595214751"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b8b300920ee99be86c5e3e80a6f7949"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5b8b300920ee99be86c5e3e80a6f7949">nvme_register_bbssd</a> (<a class="el" href="structFemuCtrl.html">FemuCtrl</a> *n)</td></tr>
+<tr class="memdesc:a5b8b300920ee99be86c5e3e80a6f7949"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册blackbox相关函数  <a href="nvme_8h.html#a5b8b300920ee99be86c5e3e80a6f7949">更多...</a><br /></td></tr>
 <tr class="separator:a5b8b300920ee99be86c5e3e80a6f7949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08aeb05994f79207836886d8a1475372"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a08aeb05994f79207836886d8a1475372">nvme_register_znssd</a> (<a class="el" href="structFemuCtrl.html">FemuCtrl</a> *n)</td></tr>
 <tr class="separator:a08aeb05994f79207836886d8a1475372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5233c5c538a64df4e9b391949d334e3"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab5233c5c538a64df4e9b391949d334e3">ns_blks</a> (<a class="el" href="structNvmeNamespace.html">NvmeNamespace</a> *ns, uint8_t lba_idx)</td></tr>
 <tr class="separator:ab5233c5c538a64df4e9b391949d334e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5c77706290dc892f52e14dfe39504b6"><td class="memItemLeft" align="right" valign="top">static hwaddr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab5c77706290dc892f52e14dfe39504b6">nvme_discontig</a> (uint64_t *dma_addr, uint16_t page_size, uint16_t queue_idx, uint16_t entry_size)</td></tr>
+<tr class="memdesc:ab5c77706290dc892f52e14dfe39504b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">地址不连续时取cmd地址  <a href="nvme_8h.html#ab5c77706290dc892f52e14dfe39504b6">更多...</a><br /></td></tr>
 <tr class="separator:ab5c77706290dc892f52e14dfe39504b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae412c484b40ac7903597a299757a7a83"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae412c484b40ac7903597a299757a7a83">nvme_check_mdts</a> (<a class="el" href="structFemuCtrl.html">FemuCtrl</a> *n, size_t len)</td></tr>
 <tr class="separator:ae412c484b40ac7903597a299757a7a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3412,6 +3417,8 @@ nvme.h 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 
+<p>扩展操作接口，具体实现在各模式ssd中 </p>
+
 </div>
 </div>
 <a id="ab820030f32fa66c1e4e952fbaccfbe68"></a>
@@ -4961,7 +4968,7 @@ nvme.h 的引用(Include)关系图:</div>
 <map name="nvme_8h_acd64982aef4cb1864b53952a92068c27_icgraph" id="nvme_8h_acd64982aef4cb1864b53952a92068c27_icgraph">
 <area shape="rect" title=" " alt="" coords="1672,31,1739,57"/>
 <area shape="rect" href="nvme-io_8c.html#a581e208522e056298eed5248b50af242" title="从to_poller队列中取req，放入cq中，然后通知上层操作已完成" alt="" coords="1445,5,1609,32"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="1429,56,1624,83"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="1429,56,1624,83"/>
 <area shape="rect" href="nvme-io_8c.html#acb7bf552fb77faee4d0aa021d51af4b7" title="nvme poller线程函数，不断处理sq和生成cq" alt="" coords="1277,5,1379,32"/>
 <area shape="rect" href="nvme_8h.html#a81f7e8af7ddcdfe9bef6af6c0333462d" title="创建poller线程，以及两个ring queue：to_ftl和to_poller" alt="" coords="1076,5,1227,32"/>
 <area shape="rect" href="nvme-admin_8c.html#a8b2764426b75545dfc03229b811607eb" title=" " alt="" coords="857,5,1028,32"/>
@@ -4969,8 +4976,8 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="nvme_8h.html#a7042f589909852500d6f26c36b78850b" title="处理admin命令的sq队列" alt="" coords="432,5,619,32"/>
 <area shape="rect" href="femu_8c.html#ac83bc83578ac4c5c414ec892ca2169e3" title=" " alt="" coords="197,5,384,32"/>
 <area shape="rect" href="femu_8c.html#a78a5db5b8b1cead9d84276dfeeb4b066" title=" " alt="" coords="5,5,149,32"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="1275,56,1381,83"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="1089,56,1213,83"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="1275,56,1381,83"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="1089,56,1213,83"/>
 </map>
 </div>
 
@@ -5062,9 +5069,9 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="nvme-admin_8c.html#ae23b14397c30828a57903ec27a4c150c" title=" " alt="" coords="1084,461,1199,488"/>
 <area shape="rect" href="oc12_8c.html#a68620169de187b09e15ef18b52eb72c6" title=" " alt="" coords="1295,765,1431,792"/>
 <area shape="rect" href="oc12_8c.html#a623f6939cbe95d9de1eab8847f6ddba0" title=" " alt="" coords="847,791,1023,817"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="369,892,564,919"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="196,892,303,919"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,892,129,919"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="369,892,564,919"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="196,892,303,919"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,892,129,919"/>
 <area shape="rect" href="oc20_8c.html#a500b512b6ae9cb7713e576b7d015e084" title=" " alt="" coords="1298,867,1429,893"/>
 <area shape="rect" href="oc20_8c.html#a3c1738dbe25b76260ddc2461c2da77c3" title=" " alt="" coords="1087,816,1196,843"/>
 <area shape="rect" href="oc20_8c.html#a25e01fd61efab89abcea94af95d9c3d5" title=" " alt="" coords="881,917,989,944"/>
@@ -5153,9 +5160,9 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="femu_8c.html#a78a5db5b8b1cead9d84276dfeeb4b066" title=" " alt="" coords="5,31,149,57"/>
 <area shape="rect" href="oc12_8c.html#a68620169de187b09e15ef18b52eb72c6" title=" " alt="" coords="1720,107,1856,133"/>
 <area shape="rect" href="oc12_8c.html#a623f6939cbe95d9de1eab8847f6ddba0" title=" " alt="" coords="1100,119,1276,145"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="857,195,1052,221"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="685,195,791,221"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="463,195,587,221"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="857,195,1052,221"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="685,195,791,221"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="463,195,587,221"/>
 <area shape="rect" href="oc20_8c.html#a500b512b6ae9cb7713e576b7d015e084" title=" " alt="" coords="1723,157,1853,184"/>
 <area shape="rect" href="oc20_8c.html#a25e01fd61efab89abcea94af95d9c3d5" title=" " alt="" coords="1340,157,1448,184"/>
 <area shape="rect" href="oc20_8c.html#aa67a8ddafb3c80d6e0ab95a9868a594c" title=" " alt="" coords="1539,208,1645,235"/>
@@ -5261,10 +5268,10 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="bb_8c.html#a3b0eb3030af1311ad77c85da413a32d8" title="blackbox 读写命令" alt="" coords="924,5,1029,32"/>
 <area shape="rect" href="nop_8c.html#a56ad5bb3626f3d51b93f720d91e65e69" title=" " alt="" coords="927,56,1027,83"/>
 <area shape="rect" href="bb_8c.html#a86a2ad222c79ea1e3eb798c53f472908" title="blackbox io命令" alt="" coords="784,5,876,32"/>
-<area shape="rect" href="nvme_8h.html#a5b8b300920ee99be86c5e3e80a6f7949" title=" " alt="" coords="575,5,736,32"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,31,527,57"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,31,284,57"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,31,129,57"/>
+<area shape="rect" href="nvme_8h.html#a5b8b300920ee99be86c5e3e80a6f7949" title="注册blackbox相关函数" alt="" coords="575,5,736,32"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,31,527,57"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,31,284,57"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,31,129,57"/>
 <area shape="rect" href="nvme_8h.html#ad4130ad93f90bb1d6ba3bfd595214751" title=" " alt="" coords="575,56,736,83"/>
 </map>
 </div>
@@ -5300,9 +5307,9 @@ nvme.h 的引用(Include)关系图:</div>
 <div class="center"><img src="nvme_8h_a91fafe4960342e59b47d66f807966b2e_icgraph.png" border="0" usemap="#nvme_8h_a91fafe4960342e59b47d66f807966b2e_icgraph" alt=""/></div>
 <map name="nvme_8h_a91fafe4960342e59b47d66f807966b2e_icgraph" id="nvme_8h_a91fafe4960342e59b47d66f807966b2e_icgraph">
 <area shape="rect" title=" " alt="" coords="575,5,643,32"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,5,527,32"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,5,284,32"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,5,527,32"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,5,284,32"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,5,129,32"/>
 </map>
 </div>
 
@@ -5355,8 +5362,8 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="femu_8c.html#ac83bc83578ac4c5c414ec892ca2169e3" title=" " alt="" coords="197,5,384,32"/>
 <area shape="rect" href="femu_8c.html#a78a5db5b8b1cead9d84276dfeeb4b066" title=" " alt="" coords="5,5,149,32"/>
 <area shape="rect" href="femu_8c.html#ac62fcc12cac3ca808b290e34dd507d66" title=" " alt="" coords="857,56,1033,83"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="685,56,791,83"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="463,56,587,83"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="685,56,791,83"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="463,56,587,83"/>
 </map>
 </div>
 
@@ -5520,7 +5527,7 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="nvme_8h.html#a81f7e8af7ddcdfe9bef6af6c0333462d" title="创建poller线程，以及两个ring queue：to_ftl和to_poller" alt="" coords="1113,95,1263,122"/>
 <area shape="rect" href="nvme-admin_8c.html#a8b2764426b75545dfc03229b811607eb" title=" " alt="" coords="869,95,1040,122"/>
 <area shape="rect" href="nvme_8h.html#a6410408d19dd2986cba9a815d25871a8" title=" " alt="" coords="1133,222,1243,249"/>
-<area shape="rect" href="nvme_8h.html#ac3b74834e78afe9ce3db5074e8398a0f" title=" " alt="" coords="1133,273,1243,299"/>
+<area shape="rect" href="nvme_8h.html#ac3b74834e78afe9ce3db5074e8398a0f" title="初始化sq队列，预分配空间" alt="" coords="1133,273,1243,299"/>
 <area shape="rect" href="nvme-admin_8c.html#af3ddf1e4e280aa3f367a5b2b44879b41" title=" " alt="" coords="890,197,1019,223"/>
 <area shape="rect" href="femu_8c.html#a31d7536be0fd698bd44a2ce15ce54987" title=" " alt="" coords="893,247,1017,274"/>
 <area shape="rect" href="femu_8c.html#aa5b4cf8d2b42e9d54982bcd45bd43d15" title=" " alt="" coords="227,210,354,237"/>
@@ -5528,9 +5535,9 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="nvme-io_8c.html#aaa8fe64369c3e7b33785cabed5a4cbde" title="从sq中取出req，放入to_ftl队列中，交由ftl处理" alt="" coords="1551,95,1709,122"/>
 <area shape="rect" href="oc12_8c.html#a3c41a58559ee2c92463ac4f25dab0a08" title=" " alt="" coords="1577,349,1683,375"/>
 <area shape="rect" href="oc12_8c.html#a623f6939cbe95d9de1eab8847f6ddba0" title=" " alt="" coords="1324,349,1500,375"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="857,349,1052,375"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="685,349,791,375"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="463,349,587,375"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="857,349,1052,375"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="685,349,791,375"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="463,349,587,375"/>
 <area shape="rect" href="oc20_8c.html#a1f489f320bfcfc7879856e5a03c87370" title=" " alt="" coords="1582,399,1678,426"/>
 <area shape="rect" href="oc20_8c.html#a2b271895f51ed6a3e57db3cf0a7f9f94" title=" " alt="" coords="1359,399,1465,426"/>
 <area shape="rect" href="oc20_8c.html#afbce5130c2fccec6d897d6efc144a7d8" title=" " alt="" coords="1100,399,1276,426"/>
@@ -5635,9 +5642,9 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="zns_8c.html#a4285aad08edb64a1c6aea72ad77f8338" title=" " alt="" coords="1047,56,1184,83"/>
 <area shape="rect" href="zns_8c.html#ab23b42610e0276e68ccaac4d13e18bfa" title=" " alt="" coords="853,132,952,159"/>
 <area shape="rect" href="zns_8c.html#a08aeb05994f79207836886d8a1475372" title=" " alt="" coords="588,132,748,159"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,132,527,159"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,132,284,159"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,132,129,159"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,132,527,159"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,132,284,159"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,132,129,159"/>
 </map>
 </div>
 
@@ -5672,8 +5679,8 @@ nvme.h 的引用(Include)关系图:</div>
 <div class="center"><img src="nvme_8h_aafda35baa4ea5b7ca05146aa59f3c6f9_icgraph.png" border="0" usemap="#nvme_8h_aafda35baa4ea5b7ca05146aa59f3c6f9_icgraph" alt=""/></div>
 <map name="nvme_8h_aafda35baa4ea5b7ca05146aa59f3c6f9_icgraph" id="nvme_8h_aafda35baa4ea5b7ca05146aa59f3c6f9_icgraph">
 <area shape="rect" title=" " alt="" coords="332,5,469,32"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,5,284,32"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,5,284,32"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,5,129,32"/>
 </map>
 </div>
 
@@ -5757,7 +5764,7 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="femu_8c.html#a25b1d92e20b65b39e29a38cb02ddcc19" title=" " alt="" coords="372,31,499,57"/>
 <area shape="rect" href="femu_8c.html#a340aa0343b4141d520e32a9e4bc303a0" title=" " alt="" coords="217,5,305,32"/>
 <area shape="rect" href="femu_8c.html#aa5b4cf8d2b42e9d54982bcd45bd43d15" title=" " alt="" coords="197,56,324,83"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="15,5,139,32"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="15,5,139,32"/>
 <area shape="rect" href="femu_8c.html#a78a5db5b8b1cead9d84276dfeeb4b066" title=" " alt="" coords="5,56,149,83"/>
 </map>
 </div>
@@ -5864,14 +5871,14 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="rte__ring_8h.html#a201b5c512389dd58216906866aba1ec5" title=" " alt="" coords="1069,309,1241,336"/>
 <area shape="rect" href="intr_8c.html#a1bcc1a1b3495a3ea33365a4afaf44b0a" title="传统的中断通知方式" alt="" coords="845,360,1021,387"/>
 <area shape="rect" href="dma_8c.html#a08f51254313a657c3826f77e6bd9a1b8" title=" " alt="" coords="866,667,1001,693"/>
-<area shape="rect" href="nvme_8h.html#ab5c77706290dc892f52e14dfe39504b6" title=" " alt="" coords="871,547,996,573"/>
+<area shape="rect" href="nvme_8h.html#ab5c77706290dc892f52e14dfe39504b6" title="地址不连续时取cmd地址" alt="" coords="871,547,996,573"/>
 <area shape="rect" href="nvme-util_8c.html#a1983cbf62a2b154bc0c1e8f01f2bb1b6" title=" " alt="" coords="866,461,1001,488"/>
 <area shape="rect" href="pqueue_8c.html#a918fcd7df850b9a0c17111abc9c323b1" title=" " alt="" coords="889,411,978,437"/>
 <area shape="rect" href="pqueue_8c.html#a69ad19c161ae75369d1a444c83f4600c" title=" " alt="" coords="871,259,996,285"/>
 <area shape="rect" href="pqueue_8c.html#a3e99f0cb15bfac6eeee46df9c875073a" title=" " alt="" coords="1114,259,1197,285"/>
 <area shape="rect" href="rte__ring_8h.html#a3afc06d02f63e84fe1569c99955af57a" title=" " alt="" coords="623,1107,774,1133"/>
 <area shape="rect" href="dma_8c.html#a0ac25a907651fbfbf9710b15dc45e484" title=" " alt="" coords="1090,1005,1221,1032"/>
-<area shape="rect" href="nvme-io_8c.html#aa9fdaa77f86c065d69d158184951be32" title=" " alt="" coords="633,765,765,792"/>
+<area shape="rect" href="nvme-io_8c.html#aa9fdaa77f86c065d69d158184951be32" title="从dram中取cmd" alt="" coords="633,765,765,792"/>
 <area shape="rect" href="nvme-util_8c.html#a0c728e2926a6efc38005202a2b224647" title=" " alt="" coords="625,867,772,893"/>
 <area shape="rect" href="nvme-io_8c.html#ae6d2b4ae7957a876e1e221b7f2ee1fb8" title="nvme处理io类型的commad，识别cmd类型并调用相关函数" alt="" coords="642,917,755,944"/>
 <area shape="rect" href="nvme-util_8c.html#a4fdc790b9e67ae29e3ef256182ed345b" title=" " alt="" coords="633,715,764,741"/>
@@ -5947,12 +5954,24 @@ nvme.h 的引用(Include)关系图:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>地址不连续时取cmd地址 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dma_addr</td><td></td></tr>
+    <tr><td class="paramname">page_size</td><td></td></tr>
+    <tr><td class="paramname">queue_idx</td><td></td></tr>
+    <tr><td class="paramname">entry_size</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>hwaddr </dd></dl>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="nvme_8h_ab5c77706290dc892f52e14dfe39504b6_icgraph.png" border="0" usemap="#nvme_8h_ab5c77706290dc892f52e14dfe39504b6_icgraph" alt=""/></div>
 <map name="nvme_8h_ab5c77706290dc892f52e14dfe39504b6_icgraph" id="nvme_8h_ab5c77706290dc892f52e14dfe39504b6_icgraph">
-<area shape="rect" title=" " alt="" coords="1843,68,1968,95"/>
+<area shape="rect" title="地址不连续时取cmd地址" alt="" coords="1843,68,1968,95"/>
 <area shape="rect" href="nvme-admin_8c.html#abd65f91764a2624cdc4e608f3dc7932e" title=" " alt="" coords="1087,43,1215,69"/>
 <area shape="rect" href="nvme_8h.html#a7042f589909852500d6f26c36b78850b" title="处理admin命令的sq队列" alt="" coords="432,43,619,69"/>
 <area shape="rect" href="nvme-io_8c.html#aa412c2f46a5bc43ac2234173c9743abe" title="将req实际封装入cq" alt="" coords="1654,144,1778,171"/>
@@ -6007,7 +6026,7 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="nvme-admin_8c.html#ac1090eb738e0aa389ef5a647e647a09f" title=" " alt="" coords="868,132,976,159"/>
 <area shape="rect" href="femu_8c.html#a340aa0343b4141d520e32a9e4bc303a0" title=" " alt="" coords="694,5,782,32"/>
 <area shape="rect" href="femu_8c.html#aa5b4cf8d2b42e9d54982bcd45bd43d15" title=" " alt="" coords="227,56,354,83"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="463,5,587,32"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="463,5,587,32"/>
 <area shape="rect" href="femu_8c.html#a78a5db5b8b1cead9d84276dfeeb4b066" title=" " alt="" coords="5,81,149,108"/>
 <area shape="rect" href="nvme-admin_8c.html#ac726ef5f792706a8a28f07f19c5097b1" title="识别、执行admin命令" alt="" coords="667,107,809,133"/>
 <area shape="rect" href="nvme_8h.html#a7042f589909852500d6f26c36b78850b" title="处理admin命令的sq队列" alt="" coords="432,107,619,133"/>
@@ -6052,7 +6071,7 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="nvme-admin_8c.html#a6f5c22b725b5eca5912f17066e95cf67" title=" " alt="" coords="867,107,975,133"/>
 <area shape="rect" href="femu_8c.html#a340aa0343b4141d520e32a9e4bc303a0" title=" " alt="" coords="694,5,782,32"/>
 <area shape="rect" href="femu_8c.html#aa5b4cf8d2b42e9d54982bcd45bd43d15" title=" " alt="" coords="227,56,354,83"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="463,5,587,32"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="463,5,587,32"/>
 <area shape="rect" href="femu_8c.html#a78a5db5b8b1cead9d84276dfeeb4b066" title=" " alt="" coords="5,81,149,108"/>
 <area shape="rect" href="nvme-admin_8c.html#ac726ef5f792706a8a28f07f19c5097b1" title="识别、执行admin命令" alt="" coords="667,107,809,133"/>
 <area shape="rect" href="nvme_8h.html#a7042f589909852500d6f26c36b78850b" title="处理admin命令的sq队列" alt="" coords="432,107,619,133"/>
@@ -6283,12 +6302,15 @@ nvme.h 的引用(Include)关系图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>初始化sq队列，预分配空间 </p>
+<dl class="section return"><dt>返回</dt><dd>uint16_t </dd></dl>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="nvme_8h_ac3b74834e78afe9ce3db5074e8398a0f_cgraph.png" border="0" usemap="#nvme_8h_ac3b74834e78afe9ce3db5074e8398a0f_cgraph" alt=""/></div>
 <map name="nvme_8h_ac3b74834e78afe9ce3db5074e8398a0f_cgraph" id="nvme_8h_ac3b74834e78afe9ce3db5074e8398a0f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,115,32"/>
+<area shape="rect" title="初始化sq队列，预分配空间" alt="" coords="5,5,115,32"/>
 <area shape="rect" href="nvme-util_8c.html#a9d8a42fcd63a79e262250aa8f54522da" title=" " alt="" coords="163,5,331,32"/>
 <area shape="rect" href="dma_8c.html#a08f51254313a657c3826f77e6bd9a1b8" title=" " alt="" coords="379,5,513,32"/>
 </map>
@@ -6298,7 +6320,7 @@ nvme.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="nvme_8h_ac3b74834e78afe9ce3db5074e8398a0f_icgraph.png" border="0" usemap="#nvme_8h_ac3b74834e78afe9ce3db5074e8398a0f_icgraph" alt=""/></div>
 <map name="nvme_8h_ac3b74834e78afe9ce3db5074e8398a0f_icgraph" id="nvme_8h_ac3b74834e78afe9ce3db5074e8398a0f_icgraph">
-<area shape="rect" title=" " alt="" coords="1035,31,1144,57"/>
+<area shape="rect" title="初始化sq队列，预分配空间" alt="" coords="1035,31,1144,57"/>
 <area shape="rect" href="nvme-admin_8c.html#a2c43f1bdb51a2e35c2ecdb9ed9db64ec" title=" " alt="" coords="857,5,987,32"/>
 <area shape="rect" href="femu_8c.html#a31d7536be0fd698bd44a2ce15ce54987" title=" " alt="" coords="860,56,984,83"/>
 <area shape="rect" href="nvme-admin_8c.html#ac726ef5f792706a8a28f07f19c5097b1" title="识别、执行admin命令" alt="" coords="667,5,809,32"/>
@@ -6565,7 +6587,7 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="dma_8c.html#a0ac25a907651fbfbf9710b15dc45e484" title=" " alt="" coords="621,5,752,32"/>
 <area shape="rect" href="intr_8c.html#a1bcc1a1b3495a3ea33365a4afaf44b0a" title="传统的中断通知方式" alt="" coords="397,56,573,83"/>
 <area shape="rect" href="dma_8c.html#a08f51254313a657c3826f77e6bd9a1b8" title=" " alt="" coords="418,107,553,133"/>
-<area shape="rect" href="nvme_8h.html#ab5c77706290dc892f52e14dfe39504b6" title=" " alt="" coords="423,157,548,184"/>
+<area shape="rect" href="nvme_8h.html#ab5c77706290dc892f52e14dfe39504b6" title="地址不连续时取cmd地址" alt="" coords="423,157,548,184"/>
 <area shape="rect" href="nvme-util_8c.html#a1983cbf62a2b154bc0c1e8f01f2bb1b6" title=" " alt="" coords="418,208,553,235"/>
 </map>
 </div>
@@ -6617,7 +6639,7 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="dma_8c.html#a0ac25a907651fbfbf9710b15dc45e484" title=" " alt="" coords="725,215,855,242"/>
 <area shape="rect" href="dma_8c.html#a08f51254313a657c3826f77e6bd9a1b8" title=" " alt="" coords="1179,266,1313,292"/>
 <area shape="rect" href="nvme-admin_8c.html#ac726ef5f792706a8a28f07f19c5097b1" title="识别、执行admin命令" alt="" coords="256,478,399,504"/>
-<area shape="rect" href="nvme_8h.html#ab5c77706290dc892f52e14dfe39504b6" title=" " alt="" coords="727,266,853,292"/>
+<area shape="rect" href="nvme_8h.html#ab5c77706290dc892f52e14dfe39504b6" title="地址不连续时取cmd地址" alt="" coords="727,266,853,292"/>
 <area shape="rect" href="nvme-util_8c.html#a1983cbf62a2b154bc0c1e8f01f2bb1b6" title=" " alt="" coords="260,528,395,555"/>
 <area shape="rect" href="nvme-util_8c.html#a0c728e2926a6efc38005202a2b224647" title=" " alt="" coords="254,579,401,606"/>
 <area shape="rect" href="intr_8c.html#ab8fc684c66f6970e095cb683d02426d5" title="通知上层admin命令已完成" alt="" coords="240,630,415,656"/>
@@ -6642,7 +6664,7 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="intr_8c.html#a4546f8dc3153b6b272979b26d9ee3a5f" title=" " alt="" coords="941,114,1131,140"/>
 <area shape="rect" href="intr_8c.html#a404cdb00218c3c3b27c4048b43d7d8db" title=" " alt="" coords="945,164,1127,191"/>
 <area shape="rect" href="intr_8c.html#aef207536dce0a636e5d7c2467c73110a" title=" " alt="" coords="961,63,1111,90"/>
-<area shape="rect" href="nvme-util_8c.html#ac3b74834e78afe9ce3db5074e8398a0f" title=" " alt="" coords="735,468,845,495"/>
+<area shape="rect" href="nvme-util_8c.html#ac3b74834e78afe9ce3db5074e8398a0f" title="初始化sq队列，预分配空间" alt="" coords="735,468,845,495"/>
 <area shape="rect" href="nvme-util_8c.html#ae00a56019ece0039e9a209dfa7bc398e" title=" " alt="" coords="733,519,847,546"/>
 <area shape="rect" href="nvme-io_8c.html#a03a3accd495e0b00d01b80e009af5c9f" title="将剩余的req都填入cq" alt="" coords="715,570,865,596"/>
 <area shape="rect" href="nvme-admin_8c.html#a1068e4177c9ff25ec1cc15b18d26356b" title=" " alt="" coords="694,620,886,647"/>
@@ -6693,16 +6715,25 @@ nvme.h 的引用(Include)关系图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>注册blackbox相关函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="nvme_8h_a5b8b300920ee99be86c5e3e80a6f7949_cgraph.png" border="0" usemap="#nvme_8h_a5b8b300920ee99be86c5e3e80a6f7949_cgraph" alt=""/></div>
 <map name="nvme_8h_a5b8b300920ee99be86c5e3e80a6f7949_cgraph" id="nvme_8h_a5b8b300920ee99be86c5e3e80a6f7949_cgraph">
-<area shape="rect" title=" " alt="" coords="5,411,167,437"/>
+<area shape="rect" title="注册blackbox相关函数" alt="" coords="5,411,167,437"/>
 <area shape="rect" href="bb_8c.html#afd2d6d40a801b554569b5c4c364f8df6" title="blackbox admin命令" alt="" coords="215,348,336,375"/>
 <area shape="rect" href="bb_8c.html#a3fc7384f815cca2f52003206b20324df" title=" " alt="" coords="242,411,309,437"/>
 <area shape="rect" href="bb_8c.html#a86a2ad222c79ea1e3eb798c53f472908" title="blackbox io命令" alt="" coords="229,588,321,615"/>
-<area shape="rect" href="bb_8c.html#a5d1e86a5f61a1db5c15dae757b35a5c3" title="blackbox识别、执行admin命令（可自定义）" alt="" coords="411,335,476,361"/>
+<area shape="rect" href="bb_8c.html#a5d1e86a5f61a1db5c15dae757b35a5c3" title="blackbox自定义admin命令" alt="" coords="411,335,476,361"/>
 <area shape="rect" href="bb_8c.html#aeaee718de94247f9ea5dc15b03680329" title=" " alt="" coords="384,385,503,412"/>
 <area shape="rect" href="ftl_8c.html#af3f6de830b620d1f3060c7de8c8ddec0" title="初始化ssd参数，为ssd各层结构体分配空间，创建ftl线程" alt="" coords="407,436,479,463"/>
 <area shape="rect" href="nvme-util_8c.html#a9e84e8328646dcb1f24be9c79018e6a0" title=" " alt="" coords="554,233,713,260"/>
@@ -6731,7 +6762,7 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="rte__ring_8h.html#ab8debfb458e927d559e7ce750048502d" title=" " alt="" coords="1010,512,1181,539"/>
 <area shape="rect" href="ftl_8c.html#af93eee663d18640559cfd06afdeb5409" title=" " alt="" coords="1033,259,1157,285"/>
 <area shape="rect" href="ftl_8c.html#a6e8a2a542e569fe2662cbb8cf647590b" title=" " alt="" coords="1042,309,1149,336"/>
-<area shape="rect" href="ftl_8c.html#a4237c1400d2e5e24f32b77e347163ab9" title="ppa地址越界则为无效地址" alt="" coords="1053,208,1138,235"/>
+<area shape="rect" href="ftl_8c.html#a4237c1400d2e5e24f32b77e347163ab9" title="判断ppa地址是否越界" alt="" coords="1053,208,1138,235"/>
 <area shape="rect" href="structppa.html#a4dc2d1cdc8cce18cdf002f309395cba8" title=" " alt="" coords="1268,309,1347,336"/>
 <area shape="rect" href="ftl_8c.html#a2db76f519a8218ea9cda35e61552a4ec" title="获取新的page（wpp已经更新，取其指向的page地址即可）" alt="" coords="1037,360,1153,387"/>
 <area shape="rect" href="ftl_8c.html#ae77b0af37a85b3285ff26402ca7d03a5" title=" " alt="" coords="793,588,931,615"/>
@@ -6755,10 +6786,10 @@ nvme.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="nvme_8h_a5b8b300920ee99be86c5e3e80a6f7949_icgraph.png" border="0" usemap="#nvme_8h_a5b8b300920ee99be86c5e3e80a6f7949_icgraph" alt=""/></div>
 <map name="nvme_8h_a5b8b300920ee99be86c5e3e80a6f7949_icgraph" id="nvme_8h_a5b8b300920ee99be86c5e3e80a6f7949_icgraph">
-<area shape="rect" title=" " alt="" coords="575,5,736,32"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,5,527,32"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,5,284,32"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" title="注册blackbox相关函数" alt="" coords="575,5,736,32"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,5,527,32"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,5,284,32"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,5,129,32"/>
 </map>
 </div>
 
@@ -6804,9 +6835,9 @@ nvme.h 的引用(Include)关系图:</div>
 <div class="center"><img src="nvme_8h_ad4130ad93f90bb1d6ba3bfd595214751_icgraph.png" border="0" usemap="#nvme_8h_ad4130ad93f90bb1d6ba3bfd595214751_icgraph" alt=""/></div>
 <map name="nvme_8h_ad4130ad93f90bb1d6ba3bfd595214751_icgraph" id="nvme_8h_ad4130ad93f90bb1d6ba3bfd595214751_icgraph">
 <area shape="rect" title=" " alt="" coords="575,5,736,32"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,5,527,32"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,5,284,32"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,5,527,32"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,5,284,32"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,5,129,32"/>
 </map>
 </div>
 
@@ -6890,9 +6921,9 @@ nvme.h 的引用(Include)关系图:</div>
 <div class="center"><img src="nvme_8h_a623f6939cbe95d9de1eab8847f6ddba0_icgraph.png" border="0" usemap="#nvme_8h_a623f6939cbe95d9de1eab8847f6ddba0_icgraph" alt=""/></div>
 <map name="nvme_8h_a623f6939cbe95d9de1eab8847f6ddba0_icgraph" id="nvme_8h_a623f6939cbe95d9de1eab8847f6ddba0_icgraph">
 <area shape="rect" title=" " alt="" coords="575,5,751,32"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,5,527,32"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,5,284,32"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,5,527,32"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,5,284,32"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,5,129,32"/>
 </map>
 </div>
 
@@ -6976,9 +7007,9 @@ nvme.h 的引用(Include)关系图:</div>
 <div class="center"><img src="nvme_8h_afbce5130c2fccec6d897d6efc144a7d8_icgraph.png" border="0" usemap="#nvme_8h_afbce5130c2fccec6d897d6efc144a7d8_icgraph" alt=""/></div>
 <map name="nvme_8h_afbce5130c2fccec6d897d6efc144a7d8_icgraph" id="nvme_8h_afbce5130c2fccec6d897d6efc144a7d8_icgraph">
 <area shape="rect" title=" " alt="" coords="575,5,751,32"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,5,527,32"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,5,284,32"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,5,527,32"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,5,284,32"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,5,129,32"/>
 </map>
 </div>
 
@@ -7062,9 +7093,9 @@ nvme.h 的引用(Include)关系图:</div>
 <div class="center"><img src="nvme_8h_a08aeb05994f79207836886d8a1475372_icgraph.png" border="0" usemap="#nvme_8h_a08aeb05994f79207836886d8a1475372_icgraph" alt=""/></div>
 <map name="nvme_8h_a08aeb05994f79207836886d8a1475372_icgraph" id="nvme_8h_a08aeb05994f79207836886d8a1475372_icgraph">
 <area shape="rect" title=" " alt="" coords="575,5,735,32"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,5,527,32"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,5,284,32"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,5,527,32"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,5,284,32"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,5,129,32"/>
 </map>
 </div>
 
@@ -7142,10 +7173,10 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="bb_8c.html#a3b0eb3030af1311ad77c85da413a32d8" title="blackbox 读写命令" alt="" coords="924,5,1029,32"/>
 <area shape="rect" href="nop_8c.html#a56ad5bb3626f3d51b93f720d91e65e69" title=" " alt="" coords="927,56,1027,83"/>
 <area shape="rect" href="bb_8c.html#a86a2ad222c79ea1e3eb798c53f472908" title="blackbox io命令" alt="" coords="784,5,876,32"/>
-<area shape="rect" href="nvme_8h.html#a5b8b300920ee99be86c5e3e80a6f7949" title=" " alt="" coords="575,5,736,32"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,31,527,57"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,31,284,57"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,31,129,57"/>
+<area shape="rect" href="nvme_8h.html#a5b8b300920ee99be86c5e3e80a6f7949" title="注册blackbox相关函数" alt="" coords="575,5,736,32"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,31,527,57"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,31,284,57"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,31,129,57"/>
 <area shape="rect" href="nvme_8h.html#ad4130ad93f90bb1d6ba3bfd595214751" title=" " alt="" coords="575,56,736,83"/>
 </map>
 </div>
@@ -7200,10 +7231,10 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="oc20_8c.html#abbab335c5f5b0e99f9a5587a93289a8c" title=" " alt="" coords="1169,107,1301,133"/>
 <area shape="rect" href="zns_8c.html#a05f7689d91910e1a2f865b30a9bc5393" title=" " alt="" coords="1174,157,1297,184"/>
 <area shape="rect" href="bb_8c.html#a3fc7384f815cca2f52003206b20324df" title=" " alt="" coords="1039,5,1105,32"/>
-<area shape="rect" href="nvme_8h.html#a5b8b300920ee99be86c5e3e80a6f7949" title=" " alt="" coords="582,5,743,32"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,81,527,108"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,81,284,108"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,81,129,108"/>
+<area shape="rect" href="nvme_8h.html#a5b8b300920ee99be86c5e3e80a6f7949" title="注册blackbox相关函数" alt="" coords="582,5,743,32"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,81,527,108"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,81,284,108"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,81,129,108"/>
 <area shape="rect" href="oc12_8c.html#a0caef7cdff7d502bdf678c7e8c57e35e" title=" " alt="" coords="1031,56,1113,83"/>
 <area shape="rect" href="oc12_8c.html#a623f6939cbe95d9de1eab8847f6ddba0" title=" " alt="" coords="575,56,751,83"/>
 <area shape="rect" href="oc20_8c.html#ab8b64d072bf22bd8976f359cf512d456" title=" " alt="" coords="1031,107,1113,133"/>
@@ -7288,10 +7319,10 @@ nvme.h 的引用(Include)关系图:</div>
 <area shape="rect" href="bb_8c.html#a3b0eb3030af1311ad77c85da413a32d8" title="blackbox 读写命令" alt="" coords="1529,145,1634,172"/>
 <area shape="rect" href="nop_8c.html#a56ad5bb3626f3d51b93f720d91e65e69" title=" " alt="" coords="1531,196,1631,223"/>
 <area shape="rect" href="bb_8c.html#a86a2ad222c79ea1e3eb798c53f472908" title="blackbox io命令" alt="" coords="1337,145,1429,172"/>
-<area shape="rect" href="nvme_8h.html#a5b8b300920ee99be86c5e3e80a6f7949" title=" " alt="" coords="917,145,1078,172"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="667,145,861,172"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="472,145,579,172"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="229,145,353,172"/>
+<area shape="rect" href="nvme_8h.html#a5b8b300920ee99be86c5e3e80a6f7949" title="注册blackbox相关函数" alt="" coords="917,145,1078,172"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="667,145,861,172"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="472,145,579,172"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="229,145,353,172"/>
 <area shape="rect" href="nvme_8h.html#ad4130ad93f90bb1d6ba3bfd595214751" title=" " alt="" coords="917,196,1078,223"/>
 <area shape="rect" href="nvme-io_8c.html#ae6d2b4ae7957a876e1e221b7f2ee1fb8" title="nvme处理io类型的commad，识别cmd类型并调用相关函数" alt="" coords="1766,323,1879,349"/>
 <area shape="rect" href="nvme-io_8c.html#aaa8fe64369c3e7b33785cabed5a4cbde" title="从sq中取出req，放入to_ftl队列中，交由ftl处理" alt="" coords="1503,323,1660,349"/>
@@ -7365,7 +7396,7 @@ nvme.h 的引用(Include)关系图:</div>
 <map name="nvme_8h_a9d8a42fcd63a79e262250aa8f54522da_icgraph" id="nvme_8h_a9d8a42fcd63a79e262250aa8f54522da_icgraph">
 <area shape="rect" title=" " alt="" coords="1192,56,1360,83"/>
 <area shape="rect" href="nvme_8h.html#a6410408d19dd2986cba9a815d25871a8" title=" " alt="" coords="1035,81,1144,108"/>
-<area shape="rect" href="nvme_8h.html#ac3b74834e78afe9ce3db5074e8398a0f" title=" " alt="" coords="1035,31,1144,57"/>
+<area shape="rect" href="nvme_8h.html#ac3b74834e78afe9ce3db5074e8398a0f" title="初始化sq队列，预分配空间" alt="" coords="1035,31,1144,57"/>
 <area shape="rect" href="nvme-admin_8c.html#af3ddf1e4e280aa3f367a5b2b44879b41" title=" " alt="" coords="857,107,987,133"/>
 <area shape="rect" href="femu_8c.html#a31d7536be0fd698bd44a2ce15ce54987" title=" " alt="" coords="860,56,984,83"/>
 <area shape="rect" href="nvme-admin_8c.html#ac726ef5f792706a8a28f07f19c5097b1" title="识别、执行admin命令" alt="" coords="667,5,809,32"/>
@@ -7582,14 +7613,14 @@ nvme.h 的引用(Include)关系图:</div>
 <map name="nvme_8h_a459a9ad482387e92a5fa8fc4c108f3f6_icgraph" id="nvme_8h_a459a9ad482387e92a5fa8fc4c108f3f6_icgraph">
 <area shape="rect" title=" " alt="" coords="1452,81,1519,108"/>
 <area shape="rect" href="nvme_8h.html#a13db5864083eb3bdfb33cbb42f2a4350" title=" " alt="" coords="1208,56,1404,83"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,56,527,83"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,56,527,83"/>
 <area shape="rect" href="nvme_8h.html#a57765d5f7b83e5c6af69f1f5c501beb7" title="nvme读写命令" alt="" coords="1077,56,1160,83"/>
 <area shape="rect" href="bb_8c.html#a3b0eb3030af1311ad77c85da413a32d8" title="blackbox 读写命令" alt="" coords="924,5,1029,32"/>
 <area shape="rect" href="nop_8c.html#a56ad5bb3626f3d51b93f720d91e65e69" title=" " alt="" coords="927,56,1027,83"/>
 <area shape="rect" href="bb_8c.html#a86a2ad222c79ea1e3eb798c53f472908" title="blackbox io命令" alt="" coords="784,5,876,32"/>
-<area shape="rect" href="nvme_8h.html#a5b8b300920ee99be86c5e3e80a6f7949" title=" " alt="" coords="575,5,736,32"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,56,284,83"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,56,129,83"/>
+<area shape="rect" href="nvme_8h.html#a5b8b300920ee99be86c5e3e80a6f7949" title="注册blackbox相关函数" alt="" coords="575,5,736,32"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,56,284,83"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,56,129,83"/>
 <area shape="rect" href="nvme_8h.html#ad4130ad93f90bb1d6ba3bfd595214751" title=" " alt="" coords="575,56,736,83"/>
 </map>
 </div>
@@ -7625,9 +7656,9 @@ nvme.h 的引用(Include)关系图:</div>
 <div class="center"><img src="nvme_8h_a5e3ee6be1fc2a840978ffa649cf6339d_icgraph.png" border="0" usemap="#nvme_8h_a5e3ee6be1fc2a840978ffa649cf6339d_icgraph" alt=""/></div>
 <map name="nvme_8h_a5e3ee6be1fc2a840978ffa649cf6339d_icgraph" id="nvme_8h_a5e3ee6be1fc2a840978ffa649cf6339d_icgraph">
 <area shape="rect" title=" " alt="" coords="575,5,641,32"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,5,527,32"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,5,284,32"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,5,527,32"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,5,284,32"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,5,129,32"/>
 </map>
 </div>
 

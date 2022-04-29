@@ -1,5 +1,5 @@
 <map id="nvme_init_sq" name="nvme_init_sq">
-<area shape="rect" id="node1" title=" " alt="" coords="1035,31,1144,57"/>
+<area shape="rect" id="node1" title="初始化sq队列，预分配空间" alt="" coords="1035,31,1144,57"/>
 <area shape="rect" id="node2" href="$nvme-admin_8c.html#a2c43f1bdb51a2e35c2ecdb9ed9db64ec" title=" " alt="" coords="857,5,987,32"/>
 <area shape="rect" id="node7" href="$femu_8c.html#a31d7536be0fd698bd44a2ce15ce54987" title=" " alt="" coords="860,56,984,83"/>
 <area shape="rect" id="node3" href="$nvme-admin_8c.html#ac726ef5f792706a8a28f07f19c5097b1" title="识别、执行admin命令" alt="" coords="667,5,809,32"/>

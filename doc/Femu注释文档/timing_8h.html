@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('timing_8h.html',''); initResizable(); 
 <map name="femu_2timing-model_2timing_8hdep" id="femu_2timing-model_2timing_8hdep">
 <area shape="rect" title=" " alt="" coords="893,5,1099,32"/>
 <area shape="rect" href="nvme_8h.html" title="nvme相关数据声明" alt="" coords="941,80,1051,107"/>
-<area shape="rect" href="dram_8c.html" title="dram后端操作" alt="" coords="5,155,168,181"/>
+<area shape="rect" href="dram_8c.html" title="dram后端操作函数定义" alt="" coords="5,155,168,181"/>
 <area shape="rect" href="bb_8c.html" title="bb &lt;==&gt; BlackBox" alt="" coords="141,229,270,256"/>
 <area shape="rect" href="ftl_8h.html" title="ftl相关数据声明" alt="" coords="243,155,370,181"/>
 <area shape="rect" href="dma_8c.html" title=" " alt="" coords="394,155,494,181"/>
@@ -211,9 +211,9 @@ $(document).ready(function(){initNavTree('timing_8h.html',''); initResizable(); 
 <area shape="rect" href="oc12_8c.html#af8b73b03b7edcdc1740a24b053ce72a5" title=" " alt="" coords="977,107,1071,133"/>
 <area shape="rect" href="oc12_8c.html#a3c41a58559ee2c92463ac4f25dab0a08" title=" " alt="" coords="799,60,905,87"/>
 <area shape="rect" href="oc12_8c.html#a623f6939cbe95d9de1eab8847f6ddba0" title=" " alt="" coords="575,63,751,89"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,95,527,121"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,95,284,121"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,95,129,121"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,95,527,121"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,95,284,121"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,95,129,121"/>
 <area shape="rect" href="oc20_8c.html#a6f0ef064288e5faf705144a99f2d702b" title=" " alt="" coords="986,157,1062,184"/>
 <area shape="rect" href="oc20_8c.html#a2b271895f51ed6a3e57db3cf0a7f9f94" title=" " alt="" coords="799,132,905,159"/>
 <area shape="rect" href="oc20_8c.html#afbce5130c2fccec6d897d6efc144a7d8" title=" " alt="" coords="575,120,751,147"/>
@@ -289,9 +289,9 @@ $(document).ready(function(){initNavTree('timing_8h.html',''); initResizable(); 
 <area shape="rect" href="oc12_8c.html#af8b73b03b7edcdc1740a24b053ce72a5" title=" " alt="" coords="977,107,1071,133"/>
 <area shape="rect" href="oc12_8c.html#a3c41a58559ee2c92463ac4f25dab0a08" title=" " alt="" coords="799,60,905,87"/>
 <area shape="rect" href="oc12_8c.html#a623f6939cbe95d9de1eab8847f6ddba0" title=" " alt="" coords="575,63,751,89"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,95,527,121"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,95,284,121"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,95,129,121"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,95,527,121"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,95,284,121"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,95,129,121"/>
 <area shape="rect" href="oc20_8c.html#a6f0ef064288e5faf705144a99f2d702b" title=" " alt="" coords="986,157,1062,184"/>
 <area shape="rect" href="oc20_8c.html#a2b271895f51ed6a3e57db3cf0a7f9f94" title=" " alt="" coords="799,132,905,159"/>
 <area shape="rect" href="oc20_8c.html#afbce5130c2fccec6d897d6efc144a7d8" title=" " alt="" coords="575,120,751,147"/>
@@ -326,9 +326,9 @@ $(document).ready(function(){initNavTree('timing_8h.html',''); initResizable(); 
 <area shape="rect" href="oc12_8c.html#a08d50fc7f025a0a40c4a68a76fd5a088" title=" " alt="" coords="928,5,1051,32"/>
 <area shape="rect" href="oc12_8c.html#a0caef7cdff7d502bdf678c7e8c57e35e" title=" " alt="" coords="799,5,880,32"/>
 <area shape="rect" href="oc12_8c.html#a623f6939cbe95d9de1eab8847f6ddba0" title=" " alt="" coords="575,5,751,32"/>
-<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,31,527,57"/>
-<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,31,284,57"/>
-<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,31,129,57"/>
+<area shape="rect" href="femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,31,527,57"/>
+<area shape="rect" href="femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,31,284,57"/>
+<area shape="rect" href="femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,31,129,57"/>
 <area shape="rect" href="oc20_8c.html#ab8b64d072bf22bd8976f359cf512d456" title=" " alt="" coords="949,56,1030,83"/>
 <area shape="rect" href="oc20_8c.html#afbce5130c2fccec6d897d6efc144a7d8" title=" " alt="" coords="575,56,751,83"/>
 </map>

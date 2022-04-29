@@ -9,7 +9,7 @@
 <area shape="rect" id="node8" title=" " alt="" coords="803,80,933,107"/>
 <area shape="rect" id="node9" title=" " alt="" coords="957,80,1053,107"/>
 <area shape="rect" id="node10" title=" " alt="" coords="1078,80,1197,107"/>
-<area shape="rect" id="node11" href="$dram_8h.html" title="dram后端相关定义" alt="" coords="1221,80,1347,107"/>
+<area shape="rect" id="node11" href="$dram_8h.html" title="DRAM后端相关声明" alt="" coords="1221,80,1347,107"/>
 <area shape="rect" id="node13" href="$rte__ring_8h.html" title=" " alt="" coords="1372,80,1479,107"/>
 <area shape="rect" id="node20" href="$pqueue_8h.html" title="Priority Queue function declarations" alt="" coords="1503,80,1609,107"/>
 <area shape="rect" id="node21" href="$nand_8h.html" title=" " alt="" coords="1633,80,1735,107"/>

@@ -112,7 +112,7 @@ NvmePollerThreadArgument 的协作图:</div>
 <area shape="rect" href="structNvmeCQueue.html" title=" " alt="" coords="1626,416,1738,443"/>
 <area shape="rect" href="structNvmeSQueue.html" title=" " alt="" coords="2109,369,2220,396"/>
 <area shape="rect" href="structrte__ring.html" title=" " alt="" coords="820,281,892,308"/>
-<area shape="rect" href="structssd.html" title=" " alt="" coords="1083,259,1127,285"/>
+<area shape="rect" href="structssd.html" title="模拟一个ssd" alt="" coords="1083,259,1127,285"/>
 <area shape="rect" href="structrte__ring__headtail.html" title=" " alt="" coords="505,271,637,297"/>
 <area shape="rect" href="structOcCtrlParams.html" title=" " alt="" coords="1049,437,1160,464"/>
 <area shape="rect" href="structNvmeRequest.html" title=" " alt="" coords="1901,355,2016,381"/>
@@ -128,7 +128,7 @@ NvmePollerThreadArgument 的协作图:</div>
 <area shape="rect" href="structNvmeCqe.html" title=" " alt="" coords="1639,467,1725,493"/>
 <area shape="rect" href="structNvmeZone.html" title=" " alt="" coords="1057,589,1152,616"/>
 <area shape="rect" href="structNvmeZoneDescr.html" title=" " alt="" coords="791,589,921,616"/>
-<area shape="rect" href="structFemuExtCtrlOps.html" title=" " alt="" coords="1041,640,1168,667"/>
+<area shape="rect" href="structFemuExtCtrlOps.html" title="扩展操作接口，具体实现在各模式ssd中" alt="" coords="1041,640,1168,667"/>
 <area shape="rect" href="structOc12Ctrl.html" title=" " alt="" coords="1065,691,1144,717"/>
 <area shape="rect" href="structOc12IdCtrl.html" title=" " alt="" coords="811,691,901,717"/>
 <area shape="rect" href="structOc12IdGroup.html" title=" " alt="" coords="518,665,625,692"/>
@@ -137,7 +137,7 @@ NvmePollerThreadArgument 的协作图:</div>
 <area shape="rect" href="structOc12AddrF.html" title=" " alt="" coords="809,640,903,667"/>
 <area shape="rect" href="structNvmeParams.html" title=" " alt="" coords="1050,741,1159,768"/>
 <area shape="rect" href="structOc20Params.html" title=" " alt="" coords="805,792,907,819"/>
-<area shape="rect" href="structSsdDramBackend.html" title=" " alt="" coords="1037,792,1173,819"/>
+<area shape="rect" href="structSsdDramBackend.html" title="DRAM backend SSD address space" alt="" coords="1037,792,1173,819"/>
 <area shape="rect" href="structNvmeIdNsZoned.html" title=" " alt="" coords="1039,107,1170,133"/>
 <area shape="rect" href="structNvmeLBAFE.html" title=" " alt="" coords="805,27,907,53"/>
 <area shape="rect" href="structNvmeErrorLog.html" title=" " alt="" coords="1047,157,1162,184"/>
@@ -145,7 +145,7 @@ NvmePollerThreadArgument 的协作图:</div>
 <area shape="rect" href="structline__mgmt.html" title="记录各种line的列表和数量" alt="" coords="810,400,902,427"/>
 <area shape="rect" href="structssdparams.html" title="ssd参数" alt="" coords="809,229,903,256"/>
 <area shape="rect" href="structwrite__pointer.html" title="wp: record next write addr" alt="" coords="802,340,910,367"/>
-<area shape="rect" href="structline.html" title=" " alt="" coords="548,341,595,368"/>
+<area shape="rect" href="structline.html" title="line" alt="" coords="548,341,595,368"/>
 <area shape="rect" href="structppa.html" title="describe a physical page addr" alt="" coords="833,128,879,155"/>
 <area shape="rect" href="structssd__channel.html" title="通道" alt="" coords="805,179,907,205"/>
 <area shape="rect" href="structnand__lun.html" title="晶圆" alt="" coords="531,179,612,205"/>
@@ -162,6 +162,7 @@ NvmePollerThreadArgument 的协作图:</div>
 <tr class="memitem:abdda07e6f64edaf6ed07493d5197d464"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFemuCtrl.html">FemuCtrl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmePollerThreadArgument.html#abdda07e6f64edaf6ed07493d5197d464">n</a></td></tr>
 <tr class="separator:abdda07e6f64edaf6ed07493d5197d464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6811a13fb3be05ceb56110fb5882be4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNvmePollerThreadArgument.html#ae6811a13fb3be05ceb56110fb5882be4">index</a></td></tr>
+<tr class="memdesc:ae6811a13fb3be05ceb56110fb5882be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">poller序号  <a href="structNvmePollerThreadArgument.html#ae6811a13fb3be05ceb56110fb5882be4">更多...</a><br /></td></tr>
 <tr class="separator:ae6811a13fb3be05ceb56110fb5882be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">结构体成员变量说明</h2>
@@ -176,6 +177,8 @@ NvmePollerThreadArgument 的协作图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>poller序号 </p>
 
 </div>
 </div>

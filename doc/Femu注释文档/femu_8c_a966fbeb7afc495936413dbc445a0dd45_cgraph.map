@@ -1,19 +1,19 @@
 <map id="femu_realize" name="femu_realize">
-<area shape="rect" id="node1" title=" " alt="" coords="5,157,112,184"/>
+<area shape="rect" id="node1" title="femu初始化，分配空间" alt="" coords="5,157,112,184"/>
 <area shape="rect" id="node2" href="$dram_8c.html#a995036898006c525a601ec4c0bd16091" title=" " alt="" coords="185,5,330,32"/>
 <area shape="rect" id="node3" href="$femu_8c.html#a02f254917f6299ec50e4ed9cf78e13f9" title=" " alt="" coords="166,56,349,83"/>
 <area shape="rect" id="node4" href="$nvme_8h.html#aafda35baa4ea5b7ca05146aa59f3c6f9" title=" " alt="" coords="189,107,326,133"/>
 <area shape="rect" id="node5" href="$femu_8c.html#af615b7b798522330f8e5375f392060ea" title=" " alt="" coords="200,157,315,184"/>
 <area shape="rect" id="node6" href="$femu_8c.html#ac62fcc12cac3ca808b290e34dd507d66" title=" " alt="" coords="169,208,345,235"/>
 <area shape="rect" id="node10" href="$femu_8c.html#afdad4c815f4a43df7b71e178c19868f0" title=" " alt="" coords="201,259,314,285"/>
-<area shape="rect" id="node12" href="$femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="160,512,355,539"/>
+<area shape="rect" id="node12" href="$femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="160,512,355,539"/>
 <area shape="rect" id="node7" href="$femu_8c.html#ac38f13e024b64cd42d58b3e6951a3da8" title=" " alt="" coords="406,208,575,235"/>
 <area shape="rect" id="node8" href="$nvme_8h.html#ab5233c5c538a64df4e9b391949d334e3" title=" " alt="" coords="674,157,745,184"/>
 <area shape="rect" id="node9" href="$femu_8c.html#a61b5f2e26fd1e0a3d04ce574e8ef9d68" title=" " alt="" coords="627,208,792,235"/>
 <area shape="rect" id="node11" href="$femu_8c.html#a85d4cc40606cf62f5edf085512acb599" title=" " alt="" coords="429,259,552,285"/>
 <area shape="rect" id="node13" href="$nvme_8h.html#acd64982aef4cb1864b53952a92068c27" title=" " alt="" coords="457,309,524,336"/>
 <area shape="rect" id="node14" href="$nvme_8h.html#a91fafe4960342e59b47d66f807966b2e" title=" " alt="" coords="457,360,525,387"/>
-<area shape="rect" id="node15" href="$bb_8c.html#a5b8b300920ee99be86c5e3e80a6f7949" title=" " alt="" coords="410,411,571,437"/>
+<area shape="rect" id="node15" href="$bb_8c.html#a5b8b300920ee99be86c5e3e80a6f7949" title="注册blackbox相关函数" alt="" coords="410,411,571,437"/>
 <area shape="rect" id="node24" href="$nop_8c.html#ad4130ad93f90bb1d6ba3bfd595214751" title=" " alt="" coords="410,461,571,488"/>
 <area shape="rect" id="node28" href="$nvme_8h.html#a623f6939cbe95d9de1eab8847f6ddba0" title=" " alt="" coords="403,563,579,589"/>
 <area shape="rect" id="node36" href="$nvme_8h.html#afbce5130c2fccec6d897d6efc144a7d8" title=" " alt="" coords="403,816,579,843"/>
@@ -23,7 +23,7 @@
 <area shape="rect" id="node16" href="$bb_8c.html#afd2d6d40a801b554569b5c4c364f8df6" title="blackbox admin命令" alt="" coords="649,259,770,285"/>
 <area shape="rect" id="node18" href="$bb_8c.html#a3fc7384f815cca2f52003206b20324df" title=" " alt="" coords="676,309,743,336"/>
 <area shape="rect" id="node21" href="$bb_8c.html#a86a2ad222c79ea1e3eb798c53f472908" title="blackbox io命令" alt="" coords="663,360,755,387"/>
-<area shape="rect" id="node17" href="$bb_8c.html#a5d1e86a5f61a1db5c15dae757b35a5c3" title="blackbox识别、执行admin命令（可自定义）" alt="" coords="873,208,939,235"/>
+<area shape="rect" id="node17" href="$bb_8c.html#a5d1e86a5f61a1db5c15dae757b35a5c3" title="blackbox自定义admin命令" alt="" coords="873,208,939,235"/>
 <area shape="rect" id="node19" href="$bb_8c.html#aeaee718de94247f9ea5dc15b03680329" title=" " alt="" coords="847,259,965,285"/>
 <area shape="rect" id="node20" href="$ftl_8c.html#af3f6de830b620d1f3060c7de8c8ddec0" title="初始化ssd参数，为ssd各层结构体分配空间，创建ftl线程" alt="" coords="870,309,942,336"/>
 <area shape="rect" id="node22" href="$bb_8c.html#a3b0eb3030af1311ad77c85da413a32d8" title="blackbox 读写命令" alt="" coords="853,360,959,387"/>

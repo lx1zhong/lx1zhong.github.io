@@ -1,7 +1,7 @@
 <map id="femu/backend/dram.h" name="femu/backend/dram.h">
-<area shape="rect" id="node1" title="dram后端相关定义" alt="" coords="914,5,1078,32"/>
+<area shape="rect" id="node1" title="DRAM后端相关声明" alt="" coords="914,5,1078,32"/>
 <area shape="rect" id="node2" href="$nvme_8h.html" title="nvme相关数据声明" alt="" coords="941,80,1051,107"/>
-<area shape="rect" id="node3" href="$dram_8c.html" title="dram后端操作" alt="" coords="5,155,168,181"/>
+<area shape="rect" id="node3" href="$dram_8c.html" title="dram后端操作函数定义" alt="" coords="5,155,168,181"/>
 <area shape="rect" id="node4" href="$bb_8c.html" title="bb &lt;==&gt; BlackBox" alt="" coords="141,229,270,256"/>
 <area shape="rect" id="node5" href="$ftl_8h.html" title="ftl相关数据声明" alt="" coords="243,155,370,181"/>
 <area shape="rect" id="node7" href="$dma_8c.html" title=" " alt="" coords="394,155,494,181"/>

@@ -11,9 +11,9 @@
 <area shape="rect" id="node12" href="$ftl_8c.html#a8610a939b22b60851e3b88e0137b7ede" title="ssd写延迟模拟" alt="" coords="1151,160,1235,187"/>
 <area shape="rect" id="node6" href="$ftl_8h.html#af3f6de830b620d1f3060c7de8c8ddec0" title="初始化ssd参数，为ssd各层结构体分配空间，创建ftl线程" alt="" coords="899,135,971,162"/>
 <area shape="rect" id="node7" href="$bb_8c.html#a3fc7384f815cca2f52003206b20324df" title=" " alt="" coords="784,135,851,162"/>
-<area shape="rect" id="node8" href="$nvme_8h.html#a5b8b300920ee99be86c5e3e80a6f7949" title=" " alt="" coords="575,135,736,162"/>
-<area shape="rect" id="node9" href="$femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title=" " alt="" coords="332,135,527,162"/>
-<area shape="rect" id="node10" href="$femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title=" " alt="" coords="177,135,284,162"/>
-<area shape="rect" id="node11" href="$femu_8c.html#aeb3b70286609648db37222148efcf8d3" title=" " alt="" coords="5,135,129,162"/>
+<area shape="rect" id="node8" href="$nvme_8h.html#a5b8b300920ee99be86c5e3e80a6f7949" title="注册blackbox相关函数" alt="" coords="575,135,736,162"/>
+<area shape="rect" id="node9" href="$femu_8c.html#a76a47b73caa1fa75fb706e3ed8f16a73" title="注册NOSSD/BBSSD/ZNSSD/OCSSD" alt="" coords="332,135,527,162"/>
+<area shape="rect" id="node10" href="$femu_8c.html#a966fbeb7afc495936413dbc445a0dd45" title="femu初始化，分配空间" alt="" coords="177,135,284,162"/>
+<area shape="rect" id="node11" href="$femu_8c.html#aeb3b70286609648db37222148efcf8d3" title="femu启动" alt="" coords="5,135,129,162"/>
 <area shape="rect" id="node16" href="$ftl_8c.html#a5b0fd3628f9c01d4151a9f849e03a6a8" title="gc产生的写" alt="" coords="1577,110,1693,136"/>
 </map>

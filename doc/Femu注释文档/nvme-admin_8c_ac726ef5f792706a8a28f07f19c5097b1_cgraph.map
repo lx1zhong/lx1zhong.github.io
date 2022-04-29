@@ -14,7 +14,7 @@
 <area shape="rect" id="node3" href="$dma_8c.html#a0ac25a907651fbfbf9710b15dc45e484" title=" " alt="" coords="453,41,583,67"/>
 <area shape="rect" id="node4" href="$dma_8c.html#a08f51254313a657c3826f77e6bd9a1b8" title=" " alt="" coords="907,142,1041,169"/>
 <area shape="rect" id="node5" href="$nvme-util_8c.html#ab586dd53da50fb72e2a7359e5f5ce7b6" title=" " alt="" coords="449,243,587,270"/>
-<area shape="rect" id="node6" href="$nvme_8h.html#ab5c77706290dc892f52e14dfe39504b6" title=" " alt="" coords="911,41,1037,67"/>
+<area shape="rect" id="node6" href="$nvme_8h.html#ab5c77706290dc892f52e14dfe39504b6" title="地址不连续时取cmd地址" alt="" coords="911,41,1037,67"/>
 <area shape="rect" id="node8" href="$nvme-util_8c.html#a7c210df43397e8f04e184a472f8efe0e" title=" " alt="" coords="449,345,587,371"/>
 <area shape="rect" id="node9" href="$nvme-util_8c.html#accdd9730e70228b02a109051bcd3ac93" title=" " alt="" coords="461,395,575,422"/>
 <area shape="rect" id="node10" href="$nvme-util_8c.html#a6410408d19dd2986cba9a815d25871a8" title=" " alt="" coords="463,446,573,473"/>
@@ -25,7 +25,7 @@
 <area shape="rect" id="node15" href="$intr_8c.html#aef207536dce0a636e5d7c2467c73110a" title=" " alt="" coords="689,421,839,447"/>
 <area shape="rect" id="node16" href="$intr_8c.html#a05882837e726b101a16a02a652f3bbf0" title=" " alt="" coords="695,471,833,498"/>
 <area shape="rect" id="node17" href="$intr_8c.html#a1eff260b4323e3ba8942b9c13ac1c89d" title=" " alt="" coords="681,522,847,549"/>
-<area shape="rect" id="node19" href="$nvme-util_8c.html#ac3b74834e78afe9ce3db5074e8398a0f" title=" " alt="" coords="463,294,573,321"/>
+<area shape="rect" id="node19" href="$nvme-util_8c.html#ac3b74834e78afe9ce3db5074e8398a0f" title="初始化sq队列，预分配空间" alt="" coords="463,294,573,321"/>
 <area shape="rect" id="node22" href="$nvme-util_8c.html#ae00a56019ece0039e9a209dfa7bc398e" title=" " alt="" coords="461,193,575,219"/>
 <area shape="rect" id="node23" href="$nvme-io_8c.html#a03a3accd495e0b00d01b80e009af5c9f" title="将剩余的req都填入cq" alt="" coords="443,142,593,169"/>
 <area shape="rect" id="node24" href="$nvme-util_8c.html#a4e852fdb44ac17526a5b317eb3e4dac7" title=" " alt="" coords="709,193,819,219"/>

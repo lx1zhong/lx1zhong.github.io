@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$dma_8c.html#a0ac25a907651fbfbf9710b15dc45e484" title=" " alt="" coords="725,215,855,242"/>
 <area shape="rect" id="node3" href="$dma_8c.html#a08f51254313a657c3826f77e6bd9a1b8" title=" " alt="" coords="1179,266,1313,292"/>
 <area shape="rect" id="node4" href="$nvme-admin_8c.html#ac726ef5f792706a8a28f07f19c5097b1" title="识别、执行admin命令" alt="" coords="256,478,399,504"/>
-<area shape="rect" id="node7" href="$nvme_8h.html#ab5c77706290dc892f52e14dfe39504b6" title=" " alt="" coords="727,266,853,292"/>
+<area shape="rect" id="node7" href="$nvme_8h.html#ab5c77706290dc892f52e14dfe39504b6" title="地址不连续时取cmd地址" alt="" coords="727,266,853,292"/>
 <area shape="rect" id="node46" href="$nvme-util_8c.html#a1983cbf62a2b154bc0c1e8f01f2bb1b6" title=" " alt="" coords="260,528,395,555"/>
 <area shape="rect" id="node47" href="$nvme-util_8c.html#a0c728e2926a6efc38005202a2b224647" title=" " alt="" coords="254,579,401,606"/>
 <area shape="rect" id="node48" href="$intr_8c.html#ab8fc684c66f6970e095cb683d02426d5" title="通知上层admin命令已完成" alt="" coords="240,630,415,656"/>
@@ -28,7 +28,7 @@
 <area shape="rect" id="node14" href="$intr_8c.html#a4546f8dc3153b6b272979b26d9ee3a5f" title=" " alt="" coords="941,114,1131,140"/>
 <area shape="rect" id="node15" href="$intr_8c.html#a404cdb00218c3c3b27c4048b43d7d8db" title=" " alt="" coords="945,164,1127,191"/>
 <area shape="rect" id="node16" href="$intr_8c.html#aef207536dce0a636e5d7c2467c73110a" title=" " alt="" coords="961,63,1111,90"/>
-<area shape="rect" id="node18" href="$nvme-util_8c.html#ac3b74834e78afe9ce3db5074e8398a0f" title=" " alt="" coords="735,468,845,495"/>
+<area shape="rect" id="node18" href="$nvme-util_8c.html#ac3b74834e78afe9ce3db5074e8398a0f" title="初始化sq队列，预分配空间" alt="" coords="735,468,845,495"/>
 <area shape="rect" id="node21" href="$nvme-util_8c.html#ae00a56019ece0039e9a209dfa7bc398e" title=" " alt="" coords="733,519,847,546"/>
 <area shape="rect" id="node22" href="$nvme-io_8c.html#a03a3accd495e0b00d01b80e009af5c9f" title="将剩余的req都填入cq" alt="" coords="715,570,865,596"/>
 <area shape="rect" id="node24" href="$nvme-admin_8c.html#a1068e4177c9ff25ec1cc15b18d26356b" title=" " alt="" coords="694,620,886,647"/>

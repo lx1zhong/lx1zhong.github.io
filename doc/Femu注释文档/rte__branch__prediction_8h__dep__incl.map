@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$rte__ring_8h.html" title=" " alt="" coords="998,95,1143,121"/>
 <area shape="rect" id="node3" href="$nvme_8h.html" title="nvme相关数据声明" alt="" coords="941,169,1051,196"/>
 <area shape="rect" id="node23" href="$rte__ring_8c.html" title=" " alt="" coords="1075,169,1216,196"/>
-<area shape="rect" id="node4" href="$dram_8c.html" title="dram后端操作" alt="" coords="5,244,168,271"/>
+<area shape="rect" id="node4" href="$dram_8c.html" title="dram后端操作函数定义" alt="" coords="5,244,168,271"/>
 <area shape="rect" id="node5" href="$bb_8c.html" title="bb &lt;==&gt; BlackBox" alt="" coords="141,319,270,345"/>
 <area shape="rect" id="node6" href="$ftl_8h.html" title="ftl相关数据声明" alt="" coords="243,244,370,271"/>
 <area shape="rect" id="node8" href="$dma_8c.html" title=" " alt="" coords="394,244,494,271"/>

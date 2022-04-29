@@ -5,7 +5,7 @@
 <area shape="rect" id="node17" href="$structNvmeCQueue.html" title=" " alt="" coords="1626,416,1738,443"/>
 <area shape="rect" id="node19" href="$structNvmeSQueue.html" title=" " alt="" coords="2109,369,2220,396"/>
 <area shape="rect" id="node3" href="$structrte__ring.html" title=" " alt="" coords="820,281,892,308"/>
-<area shape="rect" id="node36" href="$structssd.html" title=" " alt="" coords="1083,259,1127,285"/>
+<area shape="rect" id="node36" href="$structssd.html" title="模拟一个ssd" alt="" coords="1083,259,1127,285"/>
 <area shape="rect" id="node4" href="$structrte__ring__headtail.html" title=" " alt="" coords="505,271,637,297"/>
 <area shape="rect" id="node5" href="$structOcCtrlParams.html" title=" " alt="" coords="1049,437,1160,464"/>
 <area shape="rect" id="node13" href="$structNvmeRequest.html" title=" " alt="" coords="1901,355,2016,381"/>
@@ -21,7 +21,7 @@
 <area shape="rect" id="node18" href="$structNvmeCqe.html" title=" " alt="" coords="1639,467,1725,493"/>
 <area shape="rect" id="node20" href="$structNvmeZone.html" title=" " alt="" coords="1057,589,1152,616"/>
 <area shape="rect" id="node21" href="$structNvmeZoneDescr.html" title=" " alt="" coords="791,589,921,616"/>
-<area shape="rect" id="node22" href="$structFemuExtCtrlOps.html" title=" " alt="" coords="1041,640,1168,667"/>
+<area shape="rect" id="node22" href="$structFemuExtCtrlOps.html" title="扩展操作接口，具体实现在各模式ssd中" alt="" coords="1041,640,1168,667"/>
 <area shape="rect" id="node23" href="$structOc12Ctrl.html" title=" " alt="" coords="1065,691,1144,717"/>
 <area shape="rect" id="node24" href="$structOc12IdCtrl.html" title=" " alt="" coords="811,691,901,717"/>
 <area shape="rect" id="node25" href="$structOc12IdGroup.html" title=" " alt="" coords="518,665,625,692"/>
@@ -30,7 +30,7 @@
 <area shape="rect" id="node28" href="$structOc12AddrF.html" title=" " alt="" coords="809,640,903,667"/>
 <area shape="rect" id="node29" href="$structNvmeParams.html" title=" " alt="" coords="1050,741,1159,768"/>
 <area shape="rect" id="node30" href="$structOc20Params.html" title=" " alt="" coords="805,792,907,819"/>
-<area shape="rect" id="node31" href="$structSsdDramBackend.html" title=" " alt="" coords="1037,792,1173,819"/>
+<area shape="rect" id="node31" href="$structSsdDramBackend.html" title="DRAM backend SSD address space" alt="" coords="1037,792,1173,819"/>
 <area shape="rect" id="node32" href="$structNvmeIdNsZoned.html" title=" " alt="" coords="1039,107,1170,133"/>
 <area shape="rect" id="node33" href="$structNvmeLBAFE.html" title=" " alt="" coords="805,27,907,53"/>
 <area shape="rect" id="node34" href="$structNvmeErrorLog.html" title=" " alt="" coords="1047,157,1162,184"/>
@@ -38,7 +38,7 @@
 <area shape="rect" id="node40" href="$structline__mgmt.html" title="记录各种line的列表和数量" alt="" coords="810,400,902,427"/>
 <area shape="rect" id="node37" href="$structssdparams.html" title="ssd参数" alt="" coords="809,229,903,256"/>
 <area shape="rect" id="node38" href="$structwrite__pointer.html" title="wp: record next write addr" alt="" coords="802,340,910,367"/>
-<area shape="rect" id="node39" href="$structline.html" title=" " alt="" coords="548,341,595,368"/>
+<area shape="rect" id="node39" href="$structline.html" title="line" alt="" coords="548,341,595,368"/>
 <area shape="rect" id="node41" href="$structppa.html" title="describe a physical page addr" alt="" coords="833,128,879,155"/>
 <area shape="rect" id="node42" href="$structssd__channel.html" title="通道" alt="" coords="805,179,907,205"/>
 <area shape="rect" id="node43" href="$structnand__lun.html" title="晶圆" alt="" coords="531,179,612,205"/>
