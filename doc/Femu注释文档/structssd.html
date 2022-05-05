@@ -135,16 +135,20 @@ ssd 的协作图:</div>
 <tr class="memitem:a6ffa7f5fbc77044d9fb80e65d477a632"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structssd__channel.html">ssd_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structssd.html#a6ffa7f5fbc77044d9fb80e65d477a632">ch</a></td></tr>
 <tr class="separator:a6ffa7f5fbc77044d9fb80e65d477a632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d1cef93bbb35d5d9ee62073e99e53b0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structppa.html">ppa</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structssd.html#a9d1cef93bbb35d5d9ee62073e99e53b0">maptbl</a></td></tr>
+<tr class="memdesc:a9d1cef93bbb35d5d9ee62073e99e53b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">页映射表  <a href="structssd.html#a9d1cef93bbb35d5d9ee62073e99e53b0">更多...</a><br /></td></tr>
 <tr class="separator:a9d1cef93bbb35d5d9ee62073e99e53b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae49bd8bfc26a6a8f1a992d84e0cc862c"><td class="memItemLeft" align="right" valign="top">uint64_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structssd.html#ae49bd8bfc26a6a8f1a992d84e0cc862c">rmap</a></td></tr>
+<tr class="memdesc:ae49bd8bfc26a6a8f1a992d84e0cc862c"><td class="mdescLeft">&#160;</td><td class="mdescRight">反向映射表, assume it's stored in OOB  <a href="structssd.html#ae49bd8bfc26a6a8f1a992d84e0cc862c">更多...</a><br /></td></tr>
 <tr class="separator:ae49bd8bfc26a6a8f1a992d84e0cc862c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ce888a31348d5b2fa1d914dde456166"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structwrite__pointer.html">write_pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structssd.html#a8ce888a31348d5b2fa1d914dde456166">wp</a></td></tr>
 <tr class="separator:a8ce888a31348d5b2fa1d914dde456166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58bcbabc96ec3acaa19fac4ecf7956dc"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structline__mgmt.html">line_mgmt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structssd.html#a58bcbabc96ec3acaa19fac4ecf7956dc">lm</a></td></tr>
 <tr class="separator:a58bcbabc96ec3acaa19fac4ecf7956dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1863ea3d676d7f2a9db127e2ced4c87"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structrte__ring.html">rte_ring</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structssd.html#af1863ea3d676d7f2a9db127e2ced4c87">to_ftl</a></td></tr>
+<tr class="memdesc:af1863ea3d676d7f2a9db127e2ced4c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">无锁ring队列，用于接收nvme下传的req  <a href="structssd.html#af1863ea3d676d7f2a9db127e2ced4c87">更多...</a><br /></td></tr>
 <tr class="separator:af1863ea3d676d7f2a9db127e2ced4c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5ac3e7f4169f686b1279f054413e84f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structrte__ring.html">rte_ring</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structssd.html#af5ac3e7f4169f686b1279f054413e84f">to_poller</a></td></tr>
+<tr class="memdesc:af5ac3e7f4169f686b1279f054413e84f"><td class="mdescLeft">&#160;</td><td class="mdescRight">存放完成的req，交给nvme线程  <a href="structssd.html#af5ac3e7f4169f686b1279f054413e84f">更多...</a><br /></td></tr>
 <tr class="separator:af5ac3e7f4169f686b1279f054413e84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b0e9503ff5811ff40f5b426d137692e"><td class="memItemLeft" align="right" valign="top">bool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structssd.html#a2b0e9503ff5811ff40f5b426d137692e">dataplane_started_ptr</a></td></tr>
 <tr class="separator:a2b0e9503ff5811ff40f5b426d137692e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,7 +225,8 @@ ssd 的协作图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>page level mapping table </p>
+
+<p>页映射表 </p>
 
 </div>
 </div>
@@ -236,7 +241,8 @@ ssd 的协作图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>reverse mapptbl, assume it's stored in OOB </p>
+
+<p>反向映射表, assume it's stored in OOB </p>
 
 </div>
 </div>
@@ -280,6 +286,8 @@ ssd 的协作图:</div>
       </table>
 </div><div class="memdoc">
 
+<p>无锁ring队列，用于接收nvme下传的req </p>
+
 </div>
 </div>
 <a id="af5ac3e7f4169f686b1279f054413e84f"></a>
@@ -293,6 +301,8 @@ ssd 的协作图:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>存放完成的req，交给nvme线程 </p>
 
 </div>
 </div>
